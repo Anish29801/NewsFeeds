@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Css.css';
+// Import image if it's in src/assets or any other directory in src
+import newspaperImg from '../img/newspaper.png';
 
 const Navbar = ({ onSearch }) => {
   const [inputValue, setInputValue] = useState('');
@@ -10,6 +12,7 @@ const Navbar = ({ onSearch }) => {
 
   return (
     <div className="navbar">
+      <img src={newspaperImg} alt="Newspaper" />
       <h1>NewsFeed</h1>
       <div className="search-container">
         <input

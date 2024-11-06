@@ -6,10 +6,14 @@ body {
     color: #ffff;
     margin: 0;
     padding: 20px;
-    background-image: url('./img/bg.webp'); /* Add the image URL here */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-image: url('./img/bg.webp');
+    /* Add the image URL here */
+    background-size: cover;
+    /* Ensures the image covers the entire background */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
 }
 
 .navbar {
@@ -17,8 +21,22 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: rgba(51, 51, 51, 0.8); /* Adding transparency to navbar for better contrast */
+    background-color: rgba(51, 51, 51, 0.8);
+    /* Adding transparency to navbar for better contrast */
     color: white;
+}
+
+/* Css.css */
+
+.navbar img {
+    width: 40px;
+    /* Set the desired width */
+    height: 40px;
+    /* Set the desired height */
+    margin-right: 10px;
+    /* Space between image and other elements */
+    object-fit: contain;
+    /* Maintain aspect ratio, adjust as needed */
 }
 
 .navbar h1 {
@@ -33,17 +51,20 @@ body {
 }
 
 .search-bar {
-    padding: 8px 40px 8px 12px; /* Extra right padding for the button */
+    padding: 8px 40px 8px 12px;
+    /* Extra right padding for the button */
     border-radius: 4px;
     border: 1px solid #ddd;
     font-size: 1em;
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
+    /* Adjust width as needed */
 }
 
 .headline {
-    text-align: center; 
+    text-align: center;
     font-size: 2.7rem;
-    color: #d94444;         /* Sets the text color to red */
+    color: #d94444;
+    /* Sets the text color to red */
 }
 
 .search-button {
@@ -55,11 +76,13 @@ body {
     border: none;
     font-size: 2em;
     cursor: pointer;
-    color: #333; /* Color of the icon */
+    color: #333;
+    /* Color of the icon */
 }
 
 .search-button:hover {
-    color: #555; /* Darken on hover */
+    color: #555;
+    /* Darken on hover */
 }
 
 .donate-button {
@@ -82,6 +105,7 @@ body {
     margin: auto;
     padding: 20px;
 }
+
 .go-to-top-btn {
     position: fixed;
     bottom: 20px;
@@ -94,7 +118,8 @@ body {
     font-size: 1.5em;
     font-weight: 800;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none;
+    /* Initially hidden */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease;
 }
@@ -104,13 +129,16 @@ body {
 }
 
 .article {
-    background-color: rgba(31, 31, 31, 0.6); /* Semi-transparent background */
+    background-color: rgba(31, 31, 31, 0.6);
+    /* Semi-transparent background */
     margin: 15px 0;
     padding: 15px;
     border-radius: 6px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px); /* Apply a blur effect for the glassy look */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(10px);
+    /* Apply a blur effect for the glassy look */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
 }
 
 
@@ -122,20 +150,24 @@ body {
 }
 
 .article h2 {
-    font-size: 1.2em;        /* Reduce font size */
+    font-size: 1.2em;
+    /* Reduce font size */
     margin: 0;
     color: #fff;
 }
 
 .article p {
-    font-size: 0.9em;        /* Reduce font size */
-    margin: 8px 0; 
-    color: #fff;          /* Reduce margin */
+    font-size: 0.9em;
+    /* Reduce font size */
+    margin: 8px 0;
+    color: #fff;
+    /* Reduce margin */
 }
 
 .article .source,
 .article .publishedAt {
-    font-size: 0.85em;       /* Slightly smaller font size */
+    font-size: 0.85em;
+    /* Slightly smaller font size */
     color: #fff;
 }
 
@@ -146,4 +178,10 @@ body {
 
 .article a:hover {
     text-decoration: underline;
+    box-shadow: 5rem;
+}
+
+a{
+    text-decoration: none;
+
 }
