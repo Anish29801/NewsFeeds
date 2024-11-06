@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    font-family: "Montserrat",Arial, sans-serif;
+    font-family: "Montserrat", Arial, sans-serif;
     background-color: #1f1f1f;
     color: #ffff;
     margin: 0;
     padding: 20px;
+    background-image: url('./img/bg.webp'); /* Add the image URL here */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .navbar {
@@ -13,7 +17,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: rgba(51, 51, 51, 0.8); /* Adding transparency to navbar for better contrast */
     color: white;
 }
 
@@ -36,6 +40,12 @@ body {
     width: 200px; /* Adjust width as needed */
 }
 
+.headline {
+    text-align: center; 
+    font-size: 2.7rem;
+    color: #d94444;         /* Sets the text color to red */
+}
+
 .search-button {
     position: absolute;
     right: 8px;
@@ -53,7 +63,7 @@ body {
 }
 
 .donate-button {
-    background-color: #ff6347;
+    background-color: #32CD32;
     color: white;
     padding: 8px 16px;
     border: none;
@@ -64,7 +74,7 @@ body {
 }
 
 .donate-button:hover {
-    background-color: #ff4500;
+    background-color: #006400;
 }
 
 .container {
@@ -72,14 +82,37 @@ body {
     margin: auto;
     padding: 20px;
 }
+.go-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #32CD32;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-weight: 800;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.go-to-top-btn:hover {
+    background-color: #006400;
+}
 
 .article {
-    background-color: #1f1f1f;
-    margin: 15px 0;          /* Reduce margin */
-    padding: 15px;           /* Reduce padding */
-    border-radius: 6px;      /* Slightly smaller border radius */
+    background-color: rgba(31, 31, 31, 0.6); /* Semi-transparent background */
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 6px;
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px); /* Apply a blur effect for the glassy look */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
 }
+
 
 .article img {
     max-width: 100%;
